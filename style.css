@@ -1,53 +1,90 @@
-/* BACKGROUND (soft, not overwhelming) */
+/* =========================
+   BASE BACKGROUND + TEXT
+========================= */
 body {
-  background: linear-gradient(to right, #f5f5f5, #ffffff);
+  background-color: #f7f7fb; /* clean modern base */
   color: #333;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* HEADINGS with subtle color accent */
+/* =========================
+   TYPOGRAPHY
+========================= */
 h1 {
   text-align: center;
-  color: #ff4da6; /* pink accent */
-  font-weight: bold;
+  font-weight: 800;
+  color: #ff4da6; /* strong pink accent */
+  margin-top: 20px;
 }
 
 h2, h3 {
   text-align: center;
-  color: #333;
+  color: #444;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR (NOW HAS COLOR)
+========================= */
 .navbar {
   padding: 15px;
+  background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
-/* GALLERY CARDS */
+/* Navbar links */
+.navbar .nav-link,
+.navbar-brand {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+.container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   GALLERY CARDS
+========================= */
 .card {
-  transition: transform 0.3s, box-shadow 0.3s;
   border: none;
   border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
 }
 
-/* CARD IMAGE */
+/* Card images */
 .card img {
   height: 220px;
   object-fit: cover;
 }
 
-/* CARD BODY */
+/* Card body */
 .card-body {
   background-color: white;
   color: #333;
 }
 
-/* BUTTON STYLE */
+/* =========================
+   BUTTONS
+========================= */
 .btn-primary {
   background-color: #00c2ff;
   border: none;
@@ -57,16 +94,15 @@ h2, h3 {
   background-color: #0096c7;
 }
 
-/* SECTION CONTAINERS */
-.container {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 25px;
-  border-radius: 12px;
-}
-
-/* SMALL SCREEN */
+/* =========================
+   RESPONSIVE TEXT
+========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 26px;
+  }
+
+  .container {
+    padding: 15px;
   }
 }
