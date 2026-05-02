@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Color Experience</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="visit.html">Visit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+
+  <h1>Visit Us</h1>
+
+  <iframe 
+    src="https://www.google.com/maps?q=Color+Factory+Houston&output=embed"
+    width="100%" height="400">
+  </iframe>
+
+  <h3 class="mt-4">Parking & Accessibility</h3>
+  <p>Parking is available nearby. The location is wheelchair accessible.</p>
+
+  <h3 class="mt-4">Contact</h3>
+
+  <form>
+    <input class="form-control mb-2" placeholder="Name">
+    <input class="form-control mb-2" type="email" placeholder="Email">
+    <textarea class="form-control mb-2" placeholder="Message"></textarea>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

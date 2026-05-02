@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(45deg, #ff4da6, #ffd60a, #00c2ff);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
