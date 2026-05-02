@@ -1,22 +1,33 @@
 /* =========================
-   BASE BACKGROUND + TEXT
+   GLOBAL BACKGROUND
 ========================= */
 body {
-  background-color: #f7f7fb; /* clean modern base */
+  background: linear-gradient(135deg, #f7f9fc, #eef2ff);
   color: #333;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 /* =========================
-   TYPOGRAPHY
+   NAVBAR (COLOR IDENTITY)
+========================= */
+.navbar {
+  background: linear-gradient(90deg, #ff4da6, #7c83ff) !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: white !important;
+  font-weight: 500;
+}
+
+/* =========================
+   HEADINGS (SOFT COLOR)
 ========================= */
 h1 {
   text-align: center;
   font-weight: 800;
-  color: #ff4da6; /* strong pink accent */
-  margin-top: 20px;
+  color: #ff4da6;
 }
 
 h2, h3 {
@@ -25,34 +36,16 @@ h2, h3 {
 }
 
 /* =========================
-   NAVBAR (NOW HAS COLOR)
-========================= */
-.navbar {
-  padding: 15px;
-  background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
-}
-
-/* Navbar links */
-.navbar .nav-link,
-.navbar-brand {
-  color: white !important;
-  font-weight: 500;
-}
-
-.navbar .nav-link:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   PAGE CONTAINER
+   MAIN CONTENT CONTAINER
+   (THIS FIXES YOUR "GRAY LOOK")
 ========================= */
 .container {
   background-color: #ffffff;
   padding: 25px;
-  border-radius: 12px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* =========================
@@ -60,49 +53,45 @@ h2, h3 {
 ========================= */
 .card {
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* Card images */
 .card img {
   height: 220px;
   object-fit: cover;
 }
 
-/* Card body */
-.card-body {
-  background-color: white;
-  color: #333;
+/* =========================
+   CARD TEXT ACCENT
+========================= */
+.card-body h5 {
+  color: #7c83ff;
 }
 
 /* =========================
    BUTTONS
 ========================= */
 .btn-primary {
-  background-color: #00c2ff;
+  background-color: #ff4da6;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0096c7;
+  background-color: #e63e91;
 }
 
 /* =========================
-   RESPONSIVE TEXT
+   RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 26px;
-  }
-
-  .container {
-    padding: 15px;
   }
 }
