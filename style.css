@@ -1,49 +1,65 @@
 
 /* =========================
-   GLOBAL RESET (FORCE VISIBILITY)
+   GLOBAL BACKGROUND (FORCE COLOR)
 ========================= */
 body {
-  background: #f5f7ff !important;
+  background: linear-gradient(135deg, #eef2ff, #f7f9fc) !important;
   color: #111 !important;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* =========================
-   FORCE ALL TEXT TO BE DARK (IMPORTANT FIX)
-========================= */
-p, h1, h2, h3, h4, h5, li, td, th {
+/* Force ALL text to be visible black (fixes your “gray/white text” issue) */
+p, h1, h2, h3, h4, h5, li, a {
   color: #111 !important;
 }
 
 /* =========================
-   NAVBAR (KEEP COLOR BUT SIMPLE)
+   NAVBAR (KEEP COLOR)
 ========================= */
 .navbar {
-  background: #ff4da6 !important;
+  background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
-/* NAV LINKS */
 .navbar .nav-link,
 .navbar-brand {
   color: white !important;
 }
 
 /* =========================
-   CONTENT BOX (STOP WHITE-ON-WHITE ISSUE)
+   PAGE CONTAINER (WHITE BOX LOOK)
 ========================= */
 .container {
   background: white !important;
   padding: 20px;
   border-radius: 12px;
   margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 /* =========================
-   CARDS
+   HEADINGS
+========================= */
+h1 {
+  color: #ff4da6 !important;
+  text-align: center;
+  font-weight: 800;
+}
+
+h2, h3 {
+  color: #333 !important;
+  text-align: center;
+}
+
+/* =========================
+   CARDS (GALLERY FIX)
 ========================= */
 .card {
   border: none;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card img {
@@ -59,9 +75,6 @@ p, h1, h2, h3, h4, h5, li, td, th {
   border: none;
 }
 
-/* =========================
-   OVERRIDE BOOTSTRAP LINKS
-========================= */
-a {
-  color: #111;
+.btn-primary:hover {
+  background: #0096c7 !important;
 }
