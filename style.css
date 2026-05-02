@@ -1,47 +1,52 @@
+
 /* =========================
-   GLOBAL BACKGROUND (VISIBLE COLOR)
+   GLOBAL BACKGROUND
+   (clean + soft, not gray-looking)
 ========================= */
 body {
-  background: linear-gradient(135deg, #f4f6fb, #e9ecff) !important;
+  background: linear-gradient(135deg, #eef2ff, #f7f9fc) !important;
   color: #222;
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 /* =========================
-   NAVBAR (FORCED COLOR)
+   NAVBAR (FIXED VISIBILITY)
 ========================= */
 .navbar {
   background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
+  padding: 15px;
 }
 
-/* BRAND */
+/* Brand */
 .navbar-brand {
   color: #ffffff !important;
   font-weight: 700;
 }
 
-/* NAV LINKS (THIS IS THE IMPORTANT FIX) */
+/* Nav links (THIS FIXES YOUR MAIN ISSUE) */
 .navbar .nav-link {
   color: rgba(255, 255, 255, 0.85) !important;
   font-weight: 500;
   transition: 0.2s ease;
 }
 
-/* HOVER EFFECT */
+/* Hover effect */
 .navbar .nav-link:hover {
   color: #ffffff !important;
-  text-decoration: underline;
 }
 
-/* ACTIVE PAGE TAB */
+/* Active tab */
 .navbar .nav-link.active {
   color: #ffffff !important;
   font-weight: 700;
   border-bottom: 2px solid white;
 }
+
 /* =========================
    MAIN CONTENT BOX
+   (makes everything readable)
 ========================= */
 .container {
   background-color: #ffffff !important;
@@ -57,8 +62,8 @@ body {
 ========================= */
 h1 {
   color: #ff4da6 !important;
-  text-align: center;
   font-weight: 800;
+  text-align: center;
 }
 
 h2, h3 {
@@ -67,13 +72,13 @@ h2, h3 {
 }
 
 /* =========================
-   CARDS (GALLERY)
+   GALLERY CARDS
 ========================= */
 .card {
   border: none;
   border-radius: 12px;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
@@ -81,9 +86,15 @@ h2, h3 {
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+/* images */
 .card img {
   height: 220px;
   object-fit: cover;
+}
+
+/* card text accent */
+.card-body h5 {
+  color: #7c83ff;
 }
 
 /* =========================
@@ -99,10 +110,21 @@ h2, h3 {
 }
 
 /* =========================
+   TABLE (ABOUT PAGE)
+========================= */
+table {
+  background: white;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 26px;
+  }
+
+  .container {
+    padding: 15px;
   }
 }
