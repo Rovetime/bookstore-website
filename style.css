@@ -15,12 +15,31 @@ body {
   background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
-/* Navbar text */
-.navbar .nav-link,
+/* BRAND */
 .navbar-brand {
-  color: white !important;
+  color: #ffffff !important;
+  font-weight: 700;
 }
 
+/* NAV LINKS (THIS IS THE IMPORTANT FIX) */
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* ACTIVE PAGE TAB */
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
 /* =========================
    MAIN CONTENT BOX
 ========================= */
