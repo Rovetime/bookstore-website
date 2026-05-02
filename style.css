@@ -1,130 +1,67 @@
 
 /* =========================
-   GLOBAL BACKGROUND
-   (clean + soft, not gray-looking)
+   GLOBAL RESET (FORCE VISIBILITY)
 ========================= */
 body {
-  background: linear-gradient(135deg, #eef2ff, #f7f9fc) !important;
-  color: #222;
+  background: #f5f7ff !important;
+  color: #111 !important;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 /* =========================
-   NAVBAR (FIXED VISIBILITY)
+   FORCE ALL TEXT TO BE DARK (IMPORTANT FIX)
+========================= */
+p, h1, h2, h3, h4, h5, li, td, th {
+  color: #111 !important;
+}
+
+/* =========================
+   NAVBAR (KEEP COLOR BUT SIMPLE)
 ========================= */
 .navbar {
-  background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
-  padding: 15px;
+  background: #ff4da6 !important;
 }
 
-/* Brand */
+/* NAV LINKS */
+.navbar .nav-link,
 .navbar-brand {
-  color: #ffffff !important;
-  font-weight: 700;
-}
-
-/* Nav links (THIS FIXES YOUR MAIN ISSUE) */
-.navbar .nav-link {
-  color: rgba(255, 255, 255, 0.85) !important;
-  font-weight: 500;
-  transition: 0.2s ease;
-}
-
-/* Hover effect */
-.navbar .nav-link:hover {
-  color: #ffffff !important;
-}
-
-/* Active tab */
-.navbar .nav-link.active {
-  color: #ffffff !important;
-  font-weight: 700;
-  border-bottom: 2px solid white;
+  color: white !important;
 }
 
 /* =========================
-   MAIN CONTENT BOX
-   (makes everything readable)
+   CONTENT BOX (STOP WHITE-ON-WHITE ISSUE)
 ========================= */
 .container {
-  background-color: #ffffff !important;
-  padding: 25px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  background: white !important;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* =========================
-   HEADINGS
-========================= */
-h1 {
-  color: #ff4da6 !important;
-  font-weight: 800;
-  text-align: center;
-}
-
-h2, h3 {
-  color: #333;
-  text-align: center;
-}
-
-/* =========================
-   GALLERY CARDS
+   CARDS
 ========================= */
 .card {
   border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-/* images */
 .card img {
   height: 220px;
   object-fit: cover;
-}
-
-/* card text accent */
-.card-body h5 {
-  color: #7c83ff;
 }
 
 /* =========================
    BUTTONS
 ========================= */
 .btn-primary {
-  background-color: #00c2ff !important;
+  background: #00c2ff !important;
   border: none;
 }
 
-.btn-primary:hover {
-  background-color: #0096c7 !important;
-}
-
 /* =========================
-   TABLE (ABOUT PAGE)
+   OVERRIDE BOOTSTRAP LINKS
 ========================= */
-table {
-  background: white;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 26px;
-  }
-
-  .container {
-    padding: 15px;
-  }
+a {
+  color: #111;
 }
