@@ -1,61 +1,60 @@
 /* =========================
-   GLOBAL BACKGROUND
+   GLOBAL BACKGROUND (VISIBLE COLOR)
 ========================= */
 body {
-  background: linear-gradient(135deg, #f7f9fc, #eef2ff);
-  color: #333;
+  background: linear-gradient(135deg, #f4f6fb, #e9ecff) !important;
+  color: #222;
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
 /* =========================
-   NAVBAR (COLOR IDENTITY)
+   NAVBAR (FORCED COLOR)
 ========================= */
 .navbar {
-  background: linear-gradient(90deg, #ff4da6, #7c83ff) !important;
+  background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
+/* Navbar text */
 .navbar .nav-link,
 .navbar-brand {
   color: white !important;
-  font-weight: 500;
 }
 
 /* =========================
-   HEADINGS (SOFT COLOR)
+   MAIN CONTENT BOX
+========================= */
+.container {
+  background-color: #ffffff !important;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   HEADINGS
 ========================= */
 h1 {
+  color: #ff4da6 !important;
   text-align: center;
   font-weight: 800;
-  color: #ff4da6;
 }
 
 h2, h3 {
+  color: #333;
   text-align: center;
-  color: #444;
 }
 
 /* =========================
-   MAIN CONTENT CONTAINER
-   (THIS FIXES YOUR "GRAY LOOK")
-========================= */
-.container {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 16px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   GALLERY CARDS
+   CARDS (GALLERY)
 ========================= */
 .card {
   border: none;
-  border-radius: 14px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.25s ease;
+  transition: 0.3s ease;
 }
 
 .card:hover {
@@ -69,22 +68,15 @@ h2, h3 {
 }
 
 /* =========================
-   CARD TEXT ACCENT
-========================= */
-.card-body h5 {
-  color: #7c83ff;
-}
-
-/* =========================
    BUTTONS
 ========================= */
 .btn-primary {
-  background-color: #ff4da6;
+  background-color: #00c2ff !important;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #e63e91;
+  background-color: #0096c7 !important;
 }
 
 /* =========================
