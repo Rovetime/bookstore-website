@@ -1,34 +1,72 @@
+/* BACKGROUND (soft, not overwhelming) */
 body {
-  background-color: #f5f5f5; /* light gray */
+  background: linear-gradient(to right, #f5f5f5, #ffffff);
   color: #333;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f5f5f5, #ffffff);
 }
 
-/* Headings */
-h1, h2, h3 {
+/* HEADINGS with subtle color accent */
+h1 {
   text-align: center;
-  color: #222;
+  color: #ff4da6; /* pink accent */
+  font-weight: bold;
 }
 
-/* Navbar spacing */
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* NAVBAR */
 .navbar {
   padding: 15px;
 }
 
-/* Cards (gallery) */
+/* GALLERY CARDS */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: none;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Images */
-img {
-  max-height: 300px;
+/* CARD IMAGE */
+.card img {
+  height: 220px;
   object-fit: cover;
+}
+
+/* CARD BODY */
+.card-body {
+  background-color: white;
+  color: #333;
+}
+
+/* BUTTON STYLE */
+.btn-primary {
+  background-color: #00c2ff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0096c7;
+}
+
+/* SECTION CONTAINERS */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* SMALL SCREEN */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
 }
