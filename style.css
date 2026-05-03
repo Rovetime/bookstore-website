@@ -7,13 +7,16 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* =========================
-   FORCE TEXT VISIBILITY (CRITICAL FIX)
-========================= */
-body, p, h1, h2, h3, h4, h5, li, span, a {
-  color: #111 !important;
+/* normal text */
+body, p, li {
+  color: #111;
 }
+
+/* headings */
+h2, h3, h4, h5 {
+  color: #333;
+}
+
 
 /* =========================
    NAVBAR
