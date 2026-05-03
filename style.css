@@ -16,9 +16,15 @@ body {
   background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
-.navbar .nav-link,
-.navbar-brand {
+/* NAV LINKS (stay white) */
+.navbar .nav-link {
   color: white !important;
+}
+
+/* BRAND (make it stand out) */
+.navbar-brand {
+  color: #ffe600 !important; /* bright yellow */
+  font-weight: 700;
 }
 
 /* =========================
