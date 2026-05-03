@@ -12,18 +12,19 @@ body {
 /* =========================
    NAVBAR
 ========================= */
+/* NAVBAR BACKGROUND */
 .navbar {
   background: linear-gradient(90deg, #ff4da6, #00c2ff) !important;
 }
 
-/* NAV LINKS (stay white) */
+/* NAV LINKS */
 .navbar .nav-link {
   color: white !important;
 }
 
-/* BRAND (make it stand out) */
-.navbar-brand {
-  color: #ffe600 !important; /* bright yellow */
+/* BRAND (STRONG OVERRIDE) */
+.navbar a.navbar-brand {
+  color: #ffe600 !important; /* yellow */
   font-weight: 700;
 }
 
