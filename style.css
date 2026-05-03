@@ -80,3 +80,16 @@ h2, h3 {
 .btn-primary:hover {
   background: #0096c7 !important;
 }
+/* =========================
+   FORCE TEXT COLOR FIX
+========================= */
+.container,
+.container p,
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container a {
+  color: #111 !important;
+}
