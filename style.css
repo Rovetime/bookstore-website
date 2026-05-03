@@ -93,3 +93,15 @@ h2, h3 {
 .container a {
   color: #111 !important;
 }
+/* FORCE ALL MAIN CONTENT TEXT TO BE BLACK */
+body {
+  color: #111 !important;
+}
+
+.container {
+  color: #111 !important;
+}
+
+p, h1, h2, h3, h4, h5, li {
+  color: #111 !important;
+}
