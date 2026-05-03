@@ -1,22 +1,13 @@
 /* =========================
-   GLOBAL BACKGROUND
+   BACKGROUND
 ========================= */
 body {
-  background: linear-gradient(135deg, #eef2ff, #f7f9fc) !important;
+  background: linear-gradient(135deg, #eef2ff, #f7f9fc);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-/* normal text */
-body, p, li {
   color: #111;
 }
-
-/* headings */
-h2, h3, h4, h5 {
-  color: #333;
-}
-
 
 /* =========================
    NAVBAR
@@ -42,17 +33,21 @@ h2, h3, h4, h5 {
 }
 
 /* =========================
-   HEADINGS
+   TEXT
 ========================= */
-h1 {
-  color: #ff4da6 !important;
-  text-align: center;
-  font-weight: 800;
+p, li {
+  color: #111;
 }
 
-h2, h3 {
-  color: #333 !important;
+h2, h3, h4, h5 {
+  color: #333;
+}
+
+/* MAIN TITLE */
+h1 {
+  color: #ff4da6;
   text-align: center;
+  font-weight: 800;
 }
 
 /* =========================
@@ -79,29 +74,4 @@ h2, h3 {
 
 .btn-primary:hover {
   background: #0096c7 !important;
-}
-/* =========================
-   FORCE TEXT COLOR FIX
-========================= */
-.container,
-.container p,
-.container h1,
-.container h2,
-.container h3,
-.container h4,
-.container h5,
-.container a {
-  color: #111 !important;
-}
-/* FORCE ALL MAIN CONTENT TEXT TO BE BLACK */
-body {
-  color: #111 !important;
-}
-
-.container {
-  color: #111 !important;
-}
-
-p, h1, h2, h3, h4, h5, li {
-  color: #111 !important;
 }
